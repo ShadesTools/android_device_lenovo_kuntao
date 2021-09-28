@@ -11,7 +11,7 @@ cc_library_shared {
     relative_install_path: "hw",
 
     include_dirs: [
-        "hardware/qcom-caf/msm8996/audio/hal",
+        "hardware/qcom-caf/msm8996-los/audio/hal",
     ],
 
     cflags: [

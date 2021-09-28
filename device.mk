@@ -124,7 +124,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0:64 \
     vendor.qti.hardware.camera.device@1.0:64 \
     camera.msm8953 \
-    Snap
+    Camera2
 
 # CarrierConfig
 PRODUCT_PACKAGES += \
@@ -147,10 +147,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qdcm_calib_data_mipi_mot_cmd_smd_1080p_549.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_cmd_smd_1080p_549.xml
-
-# Google Photos
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/pixel_2016_exclusive.xml
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -371,6 +367,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.0-service-sdm \
+    vendor.lineage.livedisplay@2.0-service-sysfs
 
 # USB HAL
 PRODUCT_PACKAGES += \

@@ -19,9 +19,9 @@ package com.lenovo.parts.ambient;
 
 import android.os.Bundle;
 import com.lenovo.parts.R;
-import android.preference.PreferenceActivity;
+import com.lenovo.parts.MonetPreferenceActivity;
 
-public class AmbientGesturePreferenceActivity extends PreferenceActivity {
+public class AmbientGesturePreferenceActivity extends MonetPreferenceActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

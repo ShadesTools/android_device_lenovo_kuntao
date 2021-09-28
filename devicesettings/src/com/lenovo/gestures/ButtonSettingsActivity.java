@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 The LineageOS Project
+ * Copyright (C) 2021 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,9 +17,9 @@
 package com.lenovo.gestures;
 
 import android.os.Bundle;
-import android.preference.PreferenceActivity;
+import com.lenovo.gestures.MonetPreferenceActivity;
 
-public class ButtonSettingsActivity extends PreferenceActivity {
+public class ButtonSettingsActivity extends MonetPreferenceActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

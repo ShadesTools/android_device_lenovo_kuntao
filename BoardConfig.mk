@@ -156,15 +156,13 @@ BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
+OVERRIDE_QCOM_HARDWARE_VARIANT := msm8996-los
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # RIL
 DISABLE_RILD_OEM_HOOK := true
-
-# Qti telephony
-TARGET_USE_NEW_QTİ_JAR := true
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk

@@ -1,11 +1,12 @@
 package com.lenovo.parts;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-public class DeviceSettingsActivity extends Activity {
+import com.lenovo.parts.MonetPreferenceActivity;
+
+public class DeviceSettingsActivity extends MonetPreferenceActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
