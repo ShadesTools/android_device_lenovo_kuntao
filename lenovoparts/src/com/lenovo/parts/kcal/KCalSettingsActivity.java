@@ -1,5 +1,6 @@
 package com.lenovo.parts.kcal;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.Menu;
@@ -7,9 +8,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import com.lenovo.parts.R;
-import com.lenovo.parts.MonetPreferenceActivity;
 
-public class KCalSettingsActivity extends MonetPreferenceActivity implements Utils {
+public class KCalSettingsActivity extends Activity implements Utils {
 
     private KCalSettings mKCalSettingsFragment;
 
