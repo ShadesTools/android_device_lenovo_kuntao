@@ -15,6 +15,13 @@
      limitations under the License.
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:key="fp_animation"
+        android:layout="@layout/fp_animation"
+        android:clickable="false"
+        android:selectable="false" />
+
     <PreferenceCategory
         android:key="fingerprint_key"
         android:title="@string/fingerprint_kuntao_title" >

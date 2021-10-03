@@ -89,11 +89,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
 
-# Disable rescue party
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.device_config.configuration.disable_rescue_party=true \
-    persist.sys.disable_rescue=true
-
 # Factory reset protection
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/platform/soc/7824900.sdhci/by-name/config
@@ -171,15 +166,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.netmgrd.qos.enable=true \
     persist.vendor.data.mode=concurrent
 
+# IORap
+PRODUCT_PROPERTY_OVERRIDES += \
+    iorapd.perfetto.enable=false \
+    iorapd.readahead.enable=false \
+    ro.iorapd.enable=false
+
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
     ro.surface_flinger.max_virtual_display_dimension=4096
-
-# Use gestures by default
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \

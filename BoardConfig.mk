@@ -166,6 +166,9 @@ DISABLE_RILD_OEM_HOOK := true
 # Qti telephony
 TARGET_USE_NEW_QTİ_JAR := true
 
+# Security patch level
+VENDOR_SECURITY_PATCH := 2017-11-01
+
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
