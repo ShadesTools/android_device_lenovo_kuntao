@@ -247,7 +247,6 @@ PRODUCT_PACKAGES += \
 # Lenovo stuff
 PRODUCT_PACKAGES += \
     LenovoParts \
-    LenovoGestures \
     init.lenovo.parts.rc
 
 # Lights
