@@ -124,7 +124,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0:64 \
     vendor.qti.hardware.camera.device@1.0:64 \
     camera.msm8953 \
-    Snap
+    Camera2
 
 # CarrierConfig
 PRODUCT_PACKAGES += \
