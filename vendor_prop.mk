@@ -155,6 +155,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
     persist.vendor.radio.apm_sim_not_pwdn=1 \
     persist.radio.multisim.config=dsds \
+    persist.sys.fflag.override.settings_provider_model=false \
     ro.telephony.default_network=9,1 \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.rat_on=combine \
