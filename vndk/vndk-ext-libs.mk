@@ -1,4 +1,6 @@
 EXTRA_VENDOR_LIBRARIES := \
+    libhwbinder \
+    libhidltransport \
     libqti_vndfwk_detect \
     vendor.display.config@1.0 \
     vendor.display.config@1.1 \
@@ -16,4 +18,25 @@ EXTRA_VENDOR_LIBRARIES := \
     vendor.qti.hardware.btconfigstore@1.0 \
     vendor.qti.hardware.bluetooth_audio@2.0 \
     vendor.qti.hardware.camera.device@1.0 \
-    vendor.qti.hardware.cryptfshw@1.0
+    android.frameworks.displayservice@1.0 \
+    android.hardware.biometrics.fingerprint@2.1 \
+    android.hardware.bluetooth@1.0 \
+    android.hardware.drm@1.0 \
+    android.hardware.drm@1.1 \
+    android.hardware.drm@1.2 \
+    android.hardware.drm@1.3 \
+    android.hardware.drm@1.4 \
+    android.hardware.gnss@1.0 \
+    android.hardware.gnss@1.1 \
+    android.hardware.gnss@2.0 \
+    android.hardware.gnss.visibility_control@1.0 \
+    android.hardware.gnss.measurement_corrections@1.0 \
+    android.hardware.power@1.0 \
+    android.hardware.power@1.1 \
+    android.hardware.power@1.2 \
+    android.system.net.netd@1.1 \
+    android.hardware.radio@1.0 \
+    android.hardware.radio.config@1.0 \
+    android.hardware.secure_element@1.0 \
+    android.hardware.keymaster@3.0 \
+    android.hardware.gatekeeper@1.0
