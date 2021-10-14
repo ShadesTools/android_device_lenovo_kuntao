@@ -128,10 +128,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.vidc.enc.disable_pframes=1 \
     vendor.vidc.enc.narrow.searchrange=1
 
-# Memory optimizations
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.qti.sys.fw.bservice_enable=true
-
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=libqti-perfd-client.so
@@ -160,7 +156,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.apm_sim_not_pwdn=1 \
     persist.radio.multisim.config=dsds \
     ro.telephony.default_network=9,1 \
-    ro.telephony.use_old_mnc_mcc_format=true \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.sib16_support=1
@@ -170,12 +165,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.use_data_netmgrd=true \
     persist.data.netmgrd.qos.enable=true \
     persist.vendor.data.mode=concurrent
-
-# IORap
-PRODUCT_PROPERTY_OVERRIDES += \
-    iorapd.perfetto.enable=false \
-    iorapd.readahead.enable=false \
-    ro.iorapd.enable=false
 
 # SurfaceFlinger
 PRODUCT_PROPERTY_OVERRIDES += \
