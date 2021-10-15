@@ -1,0 +1,20 @@
+#
+# Take logs even when adb is not working.
+# Thanks: markakash
+#
+# Usage: Copy this file to /vendor/etc/init/hw.
+#        Add this line to your init.$(ro.hardware).rc file:
+#        import /vendor/etc/init/hw/init.logcat.rc
+#
+
+on fs
+    rm /cache/boot_lc_main.txt
+
+    start boot_lc_main
+
+service boot_lc_main /system/bin/logcat -b all -D -f /cache/boot_lc_main.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
