@@ -81,17 +81,6 @@
 
    <PreferenceCategory
         android:title="@string/fp_title">
-    <Preference
-        android:key="fingerprint_gestures"
-        android:title="@string/fp_settings_title"
-        android:summary="@string/fp_settings_summary"
-        android:icon="@drawable/ic_fp_gestures"
-        android:persistent="false" >
-        <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="com.lenovo.gestures"
-                android:targetClass="com.lenovo.gestures.ButtonSettingsActivity" />
-        </Preference>
-
         <PreferenceScreen
             android:key="ambient_display_gestures"
             android:title="@string/ambient_display_gestures_title"
