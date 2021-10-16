@@ -19,6 +19,7 @@ EXTRA_VENDOR_LIBRARIES := \
     vendor.qti.hardware.bluetooth_audio@2.0 \
     vendor.qti.hardware.camera.device@1.0 \
     android.frameworks.displayservice@1.0 \
+    android.frameworks.sensorservice@1.0 \
     android.hardware.biometrics.fingerprint@2.1 \
     android.hardware.bluetooth@1.0 \
     android.hardware.drm@1.0 \
@@ -39,4 +40,5 @@ EXTRA_VENDOR_LIBRARIES := \
     android.hardware.radio.config@1.0 \
     android.hardware.secure_element@1.0 \
     android.hardware.keymaster@3.0 \
-    android.hardware.gatekeeper@1.0
+    android.hardware.gatekeeper@1.0 \
+    android.hardware.wifi@1.5
