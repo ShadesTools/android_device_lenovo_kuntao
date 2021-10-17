@@ -27,6 +27,9 @@ EXTRA_VENDOR_LIBRARIES := \
     android.hardware.drm@1.2 \
     android.hardware.drm@1.3 \
     android.hardware.drm@1.4 \
+    android.hardware.health@1.0 \
+    android.hardware.health@2.0 \
+    android.hardware.health@2.1 \
     android.hardware.gnss@1.0 \
     android.hardware.gnss@1.1 \
     android.hardware.gnss@2.0 \
@@ -39,6 +42,11 @@ EXTRA_VENDOR_LIBRARIES := \
     android.hardware.radio@1.0 \
     android.hardware.radio.config@1.0 \
     android.hardware.secure_element@1.0 \
+    android.hardware.usb@1.0 \
+    android.hardware.nfc@1.0 \
+    android.hardware.vibrator@1.0 \
     android.hardware.keymaster@3.0 \
     android.hardware.gatekeeper@1.0 \
+    android.hardware.light@2.0 \
+    android.hardware.sensors@1.0 \
     android.hardware.wifi@1.5
