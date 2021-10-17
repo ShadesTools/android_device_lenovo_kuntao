@@ -180,7 +180,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # BPF
 PRODUCT_PROPERTY_OVERRIDES += \
-   ro.kernel.ebpf.supported=false
+    ro.kernel.ebpf.supported=false
+
+# Incremental FS
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.incremental.enable=0
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
