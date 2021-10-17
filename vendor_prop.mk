@@ -178,6 +178,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
     ro.surface_flinger.max_virtual_display_dimension=4096
 
+# BPF
+PRODUCT_PROPERTY_OVERRIDES += \
+   ro.kernel.ebpf.supported=false
+
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.delta_time.enable=true
