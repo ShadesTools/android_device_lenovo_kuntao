@@ -209,6 +209,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0
 
+# Missing apex file
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init/libadb_protos.so:$(TARGET_COPY_OUT_SYSTEM)/apex/com.android.adbd/lib64/libadb_protos.so \
+    $(LOCAL_PATH)/init/libartpalette.so:$(TARGET_COPY_OUT_SYSTEM)/apex/com.android.art.release/lib/libartpalette.so \
+    $(LOCAL_PATH)/init/libartpalette-64.so:$(TARGET_COPY_OUT_SYSTEM)/apex/com.android.art.release/lib64/libartpalette.so \
+    $(LOCAL_PATH)/init/libstatssocket.so:$(TARGET_COPY_OUT_SYSTEM)/apex/com.android.os.statsd/lib/libstatssocket.so \
+    $(LOCAL_PATH)/init/libstatssocket-64.so:$(TARGET_COPY_OUT_SYSTEM)/apex/com.android.os.statsd/lib64/libstatssocket.so
+
 # IMS
 PRODUCT_PACKAGES += \
     ims-ext-common \
