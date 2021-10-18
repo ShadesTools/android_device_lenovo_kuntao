@@ -27,3 +27,24 @@ service boot_dmesg /system/bin/sh -c "dmesg -w > /cache/boot_dmesg.txt"
     group root system
     disabled
     oneshot
+
+on boot
+    rm /cache/boot_lc_main_k.txt
+    rm /cache/boot_dmesg_k.txt
+
+    start boot_lc_main_k
+    start boot_dmesg_k
+
+service boot_lc_main_k /system/bin/logcat -b all -D -f /cache/boot_lc_main_k.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+service boot_dmesg_k /system/bin/sh -c "dmesg -w > /cache/boot_dmesg_k.txt"
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
