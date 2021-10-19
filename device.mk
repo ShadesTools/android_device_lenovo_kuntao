@@ -246,7 +246,9 @@ PRODUCT_COPY_FILES += \
 # Keymaster HAL
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl:64 \
-    android.hardware.keymaster@3.0-service
+    android.hardware.keymaster@3.0-service \
+    android.hardware.keymaster@4.0-impl:64 \
+    android.hardware.keymaster@4.0-service \
 
 # Lenovo stuff
 PRODUCT_PACKAGES += \
