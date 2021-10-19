@@ -71,7 +71,6 @@ EXTRA_VENDOR_LIBRARIES := \
     android.hardware.usb@1.0 \
     android.hardware.nfc@1.0 \
     android.hardware.vibrator@1.0 \
-    android.hardware.keymaster@3.0 \
     android.hardware.keymaster@4.0 \
     android.hardware.keymaster@4.1 \
     android.hardware.gatekeeper@1.0 \
