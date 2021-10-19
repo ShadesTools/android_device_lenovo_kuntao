@@ -173,6 +173,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.sys.disable_rescue=true
 
+# Storage.xml moment
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.sys.binary_xml=false
+
 # BPF
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.ebpf.supported=false
