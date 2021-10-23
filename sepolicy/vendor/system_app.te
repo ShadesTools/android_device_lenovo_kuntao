@@ -25,6 +25,9 @@ r_dir_file(system_app, sysfs_battery_supply);
 binder_call(system_app, hal_alarm_qti_default);
 allow system_app hal_alarm_qti_hwservice:hwservice_manager find;
 
+# Fm radio
+allow system_app fm_radio_device:chr_file r_file_perms;
+
 # FPS info
 allow system_app sysfs_fps:file rw_file_perms;
 
