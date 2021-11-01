@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_kuntao.mk
+    $(LOCAL_DIR)/spark_kuntao.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_kuntao-user \
-    lineage_kuntao-userdebug \
-    lineage_kuntao-eng
+    spark_kuntao-user \
+    spark_kuntao-userdebug \
+    spark_kuntao-eng
