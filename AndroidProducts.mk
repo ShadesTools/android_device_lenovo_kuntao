@@ -14,9 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/spark_kuntao.mk
+    $(LOCAL_DIR)/havoc_kuntao.mk
 
 COMMON_LUNCH_CHOICES := \
-    spark_kuntao-user \
-    spark_kuntao-userdebug \
-    spark_kuntao-eng
+    havoc_kuntao-userdebug \
